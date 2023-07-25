@@ -1,0 +1,8 @@
+.background_login {
+    background-image : url('../img/123457.png');
+    object-fit: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

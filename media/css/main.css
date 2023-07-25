@@ -1,0 +1,7 @@
+body {
+	padding-top: 3.5rem;
+	color: #5a5a5a;
+  }
+main >.container:first-child {
+	min-height: 500px;
+}

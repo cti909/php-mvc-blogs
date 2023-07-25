@@ -1,0 +1,13 @@
+<FilesMatch "\.(php)$">
+  <IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+  </IfModule>
+</FilesMatch> 
+<IfModule mod_rewrite.c>
+   RewriteEngine on
+
+   RewriteRule (blogs/.*) $1 [L] # adjust the regex to what you want.
+
+   RewriteRule    ^$ app/webroot/    [L]
+   RewriteRule    (.*) app/webroot/$1 [L]
+</IfModule>
